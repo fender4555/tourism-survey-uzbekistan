@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tourist Survey — Uzbekistan</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: #f5f5f0;
+    color: #2c2c2a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    line-height: 1.5;
+  }
+
+  .container {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 48px 32px;
+    max-width: 880px;
+    width: 100%;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1A365D;
+    margin-bottom: 12px;
+  }
+
+  .header .subtitle {
+    font-size: 16px;
+    color: #5F5E5A;
+    margin-bottom: 6px;
+  }
+
+  .header .subtitle-translated {
+    font-size: 13px;
+    color: #888780;
+    font-style: italic;
+    line-height: 1.7;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+
+  .card {
+    display: block;
+    background: #ffffff;
+    border: 1.5px solid #e5e5e0;
+    border-radius: 12px;
+    padding: 28px 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    border-color: #1A365D;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(26, 54, 93, 0.08);
+  }
+
+  .card .flag {
+    font-size: 42px;
+    margin-bottom: 10px;
+    line-height: 1;
+  }
+
+  .card .lang {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1A365D;
+    margin-bottom: 6px;
+  }
+
+  .card .cta {
+    font-size: 12px;
+    color: #5F5E5A;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 13px;
+    color: #888780;
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e0;
+  }
+
+  .footer .badges {
+    margin-bottom: 12px;
+  }
+
+  .footer .badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #f5f5f0;
+    border-radius: 12px;
+    margin: 0 4px 4px;
+    font-size: 12px;
+    color: #5F5E5A;
+  }
+
+  .researcher {
+    font-size: 12px;
+    color: #B4B2A9;
+    margin-top: 8px;
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 32px 20px; }
+    .header h1 { font-size: 22px; }
+    .cards { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .card { padding: 20px 12px; }
+    .card .flag { font-size: 36px; }
+    .card .lang { font-size: 15px; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Tourist Survey — Uzbekistan</h1>
+      <p class="subtitle">Please choose your language to begin</p>
+      <p class="subtitle-translated">
+        Пожалуйста, выберите язык&nbsp;·&nbsp;Veuillez choisir votre langue&nbsp;·&nbsp;Bitte wählen Sie Ihre Sprache<br>
+        Per favore scegli la tua lingua&nbsp;·&nbsp;言語を選択してください
+      </p>
+    </div>
+
+    <div class="cards">
+      <a href="https://forms.gle/oZiwYFR7ZjyqR3Lm9" class="card">
+        <div class="flag">🇬🇧</div>
+        <div class="lang">English</div>
+        <div class="cta">Start the survey →</div>
+      </a>
+
+      <a href="https://forms.gle/BCy9nFZ1ssEhaDiVA" class="card">
+        <div class="flag">🇷🇺</div>
+        <div class="lang">Русский</div>
+        <div class="cta">Начать опрос →</div>
+      </a>
+
+      <a href="https://forms.gle/hWyz5vrKy3jJVAma6" class="card">
+        <div class="flag">🇫🇷</div>
+        <div class="lang">Français</div>
+        <div class="cta">Commencer →</div>
+      </a>
+
+      <a href="https://forms.gle/i2FE6xhKKrrTuoaF9" class="card">
+        <div class="flag">🇩🇪</div>
+        <div class="lang">Deutsch</div>
+        <div class="cta">Umfrage starten →</div>
+      </a>
+
+      <a href="https://forms.gle/RSvfm4byZAhCi2r37" class="card">
+        <div class="flag">🇮🇹</div>
+        <div class="lang">Italiano</div>
+        <div class="cta">Inizia il sondaggio →</div>
+      </a>
+
+      <a href="https://forms.gle/qdf18c6BnRKCLzSk8" class="card">
+        <div class="flag">🇯🇵</div>
+        <div class="lang">日本語</div>
+        <div class="cta">アンケートを始める →</div>
+      </a>
+    </div>
+
+    <div class="footer">
+      <div class="badges">
+        <span class="badge">Anonymous</span>
+        <span class="badge">7–10 minutes</span>
+        <span class="badge">Academic research</span>
+      </div>
+      <p>Tashkent State University of Economy · Doctoral Research</p>
+      <p class="researcher">Researcher: Elbek Narziqulov</p>
+    </div>
+  </div>
+</body>
+</html>
